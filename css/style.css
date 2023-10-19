@@ -300,32 +300,35 @@ body {
 
 /* * recently* */
 
-.recently {
+.box-song {
   padding: 22px 22px;
 }
 
-.recently h3 {
-  margin-bottom: 32px;
+.box-song p {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 700;
 }
 
-.recently ul {
+.box-song ul {
+  margin-top: 30px;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.recently li img {
+.box-song li img {
   width: 100%;
   display: block;
 }
 
-.recently li h5 {
+.box-song li h5 {
   margin: 20px 0 8px 0;
   color: var(--txt-color-white);
   font-weight: 700;
   font-size: 18px;
 }
 
-.recently li p {
+.box-song li p {
   font-size: 14px;
   font-weight: 700;
 }
