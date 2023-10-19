@@ -72,7 +72,7 @@ body {
 .sidebar {
   width: 50px;
   background-color: var(--bg-color-black);
-  height: 100vh;
+  height: calc(100vh - 90px);
   flex-direction: column;
   flex-shrink: 0;
 }
@@ -202,6 +202,15 @@ body {
 }
 
 /* ***** /main ****** */
+
+/* ***** footer ****** */
+
+footer {
+  height: 90px;
+  background-color: bisque;
+}
+
+/* ***** /footer ****** */
 
 /* *** media *** */
 
