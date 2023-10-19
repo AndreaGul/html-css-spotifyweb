@@ -112,6 +112,8 @@ body {
   display: none;
 }
 
+/**** /links ****/
+
 .links li {
   margin: 13px 0;
 }
@@ -128,6 +130,24 @@ body {
   margin-left: 4px;
   display: none;
 }
+/**** /links ****/
+
+/* *** playlist *** */
+.playlist {
+  padding-left: 20px;
+  padding-bottom: 23px;
+}
+
+.playlist h5 {
+  margin: 12px 0;
+}
+
+.playlist li i {
+  font-size: 40px;
+  margin-right: 12px;
+}
+
+/* *** /playlist *** */
 
 .nome-playlist {
   flex-grow: 1;
