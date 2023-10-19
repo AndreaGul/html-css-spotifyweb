@@ -8,13 +8,21 @@ body {
 /* colori */
 :root {
   --bg-color-black: #000000;
+  --txt-color-white: #fff;
 }
 
+.color-white {
+  color: var(--txt-color-white);
+}
 /* /colori */
 
 /* allineo gli lementi al centro orizontalmente */
 .txt-center {
   text-align: center;
+}
+
+.row {
+  display: flex;
 }
 
 /* ** /common ** */
@@ -29,17 +37,11 @@ body {
   position: relative;
 }
 
-/* spaziatura e ridimensionamento delle immagine rispetto al contenitore */
-.left-col img {
-  padding: 5px 12px;
-}
-
 /* posizionamento del download e del profilo in basso alla colonna */
 .left-col-down {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding-bottom: 10px;
 }
 
 /* spaziatura e ridimensionamento dell'icona downaload ripsetto al contenitore */
@@ -65,4 +67,62 @@ body {
   display: block;
 }
 
+/* ** left col big ** */
+
+.left-col-big {
+  padding: 20px;
+}
+
+#logo {
+  width: 80%;
+  margin-bottom: 32px;
+}
+
+.left-col-big .icon-text img {
+  width: 36px;
+  margin-right: 2px;
+}
+
+.left-col-big .icon-text {
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* ** /left col big ** */
+
 /* ***** /main ****** */
+
+/* *** media *** */
+
+@media screen and (min-width: 576px) {
+  .left-col {
+    width: 230px;
+  }
+
+  .left-col-small {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .left-col-big {
+    display: none;
+  }
+
+  /* spaziatura e ridimensionamento delle immagine rispetto al contenitore */
+  .left-col img {
+    padding: 5px 12px;
+  }
+
+  .round-image img {
+    padding: 0 0;
+  }
+
+  .left-col-down {
+    padding-bottom: 10px;
+  }
+}
+
+/* *** media *** */
