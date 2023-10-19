@@ -29,6 +29,10 @@ body {
   align-items: center;
 }
 
+.display-none-block {
+  display: none;
+}
+
 /* ** /common ** */
 
 /* ***** main ****** */
@@ -55,41 +59,60 @@ body {
   display: block;
 } */
 
-/* ** left col  ** */
+/* ** sidebar  ** */
 
+/* ***debug*** */
+.debug .links {
+  background-color: red;
+}
+
+.debug .playlist {
+  background-color: green;
+}
+
+.debug .nome-playlist {
+  background-color: blue;
+}
+
+.debug .el-nom-playlist {
+  background-color: pink;
+}
+
+.debug .profilo {
+  background-color: lightblue;
+}
+/* *** /debug*** */
 .sidebar {
-  width: 50px;
   background-color: var(--bg-color-black);
   height: 100vh;
   flex-direction: column;
+  flex-shrink: 0;
+}
+
+.menu {
+  flex-grow: 1;
 }
 .sidebar img {
   width: 20px;
 }
 
-.links {
-  background-color: red;
+#logo {
+  display: none;
 }
 
-.playlist {
-  background-color: green;
+.links p {
+  display: none;
 }
 
 .nome-playlist {
-  background-color: blue;
   flex-grow: 1;
 }
 
-.el-nom-playlist {
-  background-color: pink;
-}
-
 .profilo {
-  background-color: lightblue;
   margin-top: auto;
 }
 
-/* ** /left col  ** */
+/* ** sidebar  ** */
 
 /* ***** /main ****** */
 
@@ -98,6 +121,20 @@ body {
 @media screen and (min-width: 576px) {
   .sidebar {
     width: 230px;
+  }
+  #logo {
+    display: block;
+  }
+  #logo-small {
+    display: none;
+  }
+
+  .display-none-block {
+    display: block;
+  }
+
+  .links p {
+    display: block;
   }
 }
 

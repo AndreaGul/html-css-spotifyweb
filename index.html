@@ -25,16 +25,16 @@
     <!-- foglio di stile -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="debug">
     <!-- main -->
-    <main>
+    <main class="row">
       <!-- colonna di sinistra -->
       <div class="sidebar row color-white">
         <!-- elementi all'interno della colonna grandezza s -->
 
         <!-- logo -->
         <div>
-          <img src="img/logo-small.svg" alt="logo small Spotify" />
+          <img id="logo-small" src="img/logo-small.svg" alt="logo Spotify" />
           <img id="logo" src="img/logo.svg" alt="logo Spotify" />
         </div>
 
@@ -59,7 +59,7 @@
         <!-- /links -->
 
         <!-- playlist -->
-        <div class="playlist">
+        <div class="playlist display-none-block">
           <ul>
             <li><h5>PLAYLIST</h5></li>
             <li class="">
@@ -70,7 +70,7 @@
         </div>
         <!-- /playlist -->
 
-        <div class="nome-playlist">
+        <div class="nome-playlist display-none-block">
           <ul class="el-nom-playlist">
             <li class="">Nome Playlist</li>
             <li>Nome Playlist</li>
@@ -94,7 +94,7 @@
         <!-- /download e profilo a fondo pagina -->
       </div>
       <!-- /colonna di sinistra -->
-      <div class="right-col"></div>
+      <div class="menu">menu</div>
     </main>
     <!-- /main -->
   </body>
