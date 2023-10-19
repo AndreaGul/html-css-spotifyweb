@@ -9,6 +9,7 @@ body {
 :root {
   --bg-color-black: #000000;
   --txt-color-white: #fff;
+  --colore-grey: #717171;
 }
 
 .color-white {
@@ -44,28 +45,6 @@ body {
 /* ** /common ** */
 
 /* ***** main ****** */
-
-/* posizionamento del download e del profilo in basso alla colonna */
-
-/* spaziatura e ridimensionamento dell'icona downaload ripsetto al contenitore */
-
-/* permette all'immagine di diventare rotonda */
-/* .round-image {
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: gray;
-  display: inline-block;
-} */
-
-/* dimensioni immagine rispetto al suo contenitore per farla diventare rotonda */
-/* .round-image img {
-  padding: 0 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-} */
 
 /* ** sidebar  ** */
 
@@ -134,29 +113,87 @@ body {
 
 /* *** playlist *** */
 .playlist {
+  flex-grow: 1;
+
+  overflow: hidden;
+}
+
+/* ** header ** */
+.header {
   padding-left: 20px;
   padding-bottom: 23px;
 }
 
-.playlist h5 {
+.header h5 {
   margin: 12px 0;
 }
 
-.playlist li i {
+.header li i {
   font-size: 40px;
   margin-right: 12px;
 }
 
+.header li p {
+  font-weight: 700;
+}
+
+/* ** header ** */
+/* todo da rivedere scroll bar */
+/* .playlist .nome-playlist {
+  overflow-y: auto;
+} */
+
+.nome-playlist .el-nom-playlist li {
+  padding-bottom: 20px;
+  margin-left: 20px;
+  font-weight: 700;
+}
+
 /* *** /playlist *** */
 
-.nome-playlist {
-  flex-grow: 1;
-}
+/* *profilo* */
 
 .profilo {
   margin-top: auto;
   text-align: center;
 }
+
+.profilo .download {
+  justify-content: center;
+  padding-bottom: 12px;
+}
+
+.profilo .download img {
+  width: 12px;
+}
+
+.profilo .download p {
+  display: none;
+}
+
+.profilo .img-profilo {
+  margin-top: 14px;
+}
+
+/* permette all'immagine di diventare rotonda */
+.round-image {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: gray;
+  display: inline-block;
+}
+
+/* dimensioni immagine rispetto al suo contenitore per farla diventare rotonda */
+.round-image img {
+  padding: 0 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* * /profilo* */
 
 /* ** sidebar  ** */
 
@@ -193,6 +230,15 @@ body {
 
   .profilo {
     text-align: left;
+    padding: 0 20px;
+  }
+
+  .profilo .download {
+    border-bottom: var(--colore-grey) solid 2px;
+    justify-content: left;
+  }
+  .profilo .download p {
+    display: block;
   }
 }
 
