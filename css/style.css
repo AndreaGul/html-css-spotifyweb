@@ -29,6 +29,10 @@ body {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .display-none-block {
   display: none;
 }
@@ -83,21 +87,26 @@ body {
 }
 /* *** /debug*** */
 .sidebar {
+  width: 50px;
   background-color: var(--bg-color-black);
   height: 100vh;
   flex-direction: column;
   flex-shrink: 0;
 }
 
-.menu {
-  flex-grow: 1;
-}
 .sidebar img {
-  width: 20px;
+  width: 28px;
 }
 
 #logo {
   display: none;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  justify-content: center;
 }
 
 .links p {
@@ -110,9 +119,14 @@ body {
 
 .profilo {
   margin-top: auto;
+  text-align: center;
 }
 
 /* ** sidebar  ** */
+
+.menu {
+  flex-grow: 1;
+}
 
 /* ***** /main ****** */
 
@@ -135,6 +149,14 @@ body {
 
   .links p {
     display: block;
+  }
+
+  .links a {
+    justify-content: left;
+  }
+
+  .profilo {
+    text-align: left;
   }
 }
 
