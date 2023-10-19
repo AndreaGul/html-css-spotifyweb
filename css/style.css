@@ -3,6 +3,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
 /* ** common ** */
 
 /* colori */
@@ -127,7 +128,7 @@ body {
 .playlist {
   flex-grow: 1;
 
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 /* ** header ** */
@@ -291,6 +292,19 @@ body {
 /* * /navbar* */
 
 /* * recently* */
+
+.recently ul {
+  flex-wrap: wrap;
+}
+
+.recently li {
+  width: calc(100% / 2);
+}
+
+.recently li img {
+  width: 100%;
+  display: block;
+}
 
 /* * /recently* */
 
