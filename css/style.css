@@ -276,6 +276,18 @@ body {
 
 /* *navbar* */
 
+/* gli elementi che non riescono ad entrare nel vieport vanno a capo*/
+.navbar ul {
+  flex-wrap: wrap;
+}
+
+/* caratteristiche della lista */
+.navbar li {
+  margin: 22px 10px;
+  font-weight: 700;
+  color: var(--colore-grey);
+}
+
 /* * /navbar* */
 
 /* * recently* */
