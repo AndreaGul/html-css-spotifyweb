@@ -33,117 +33,71 @@ body {
 
 /* ***** main ****** */
 
-/* dimensioni della colonna sinistra */
-.left-col {
-  width: 50px;
-  height: 100vh;
-  background-color: var(--bg-color-black);
-  position: relative;
-}
-
 /* posizionamento del download e del profilo in basso alla colonna */
-.left-col-down {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
 
 /* spaziatura e ridimensionamento dell'icona downaload ripsetto al contenitore */
-.left-col .left-download {
-  padding: 17px 18px;
-}
 
 /* permette all'immagine di diventare rotonda */
-.round-image {
+/* .round-image {
   height: 25px;
   width: 25px;
   border-radius: 50%;
   overflow: hidden;
   background-color: gray;
   display: inline-block;
-}
+} */
 
 /* dimensioni immagine rispetto al suo contenitore per farla diventare rotonda */
-.round-image img {
+/* .round-image img {
   padding: 0 0;
   width: 100%;
   height: 100%;
   display: block;
+} */
+
+/* ** left col  ** */
+
+.sidebar {
+  width: 50px;
+  background-color: var(--bg-color-black);
+  height: 100vh;
+  flex-direction: column;
+}
+.sidebar img {
+  width: 20px;
 }
 
-/* ** left col big ** */
-
-.left-col-big {
-  padding: 20px;
+.links {
+  background-color: red;
 }
 
-#logo {
-  width: 80%;
-  margin-bottom: 32px;
+.playlist {
+  background-color: green;
 }
 
-.left-col-big .icon-text img {
-  width: 30px;
-  margin-right: 2px;
+.nome-playlist {
+  background-color: blue;
+  flex-grow: 1;
 }
 
-.left-col-big .icon-text {
-  font-weight: 700;
-  margin-bottom: 10px;
+.el-nom-playlist {
+  background-color: pink;
 }
 
-.left-col-big h5 {
-  margin-top: 20px;
+.profilo {
+  background-color: lightblue;
+  margin-top: auto;
 }
 
-.left-col-big .icon-text i {
-  font-size: 40px;
-  margin-right: 10px;
-}
-
-.left-col-big li:nth-child(1) {
-  margin-top: 10px;
-}
-
-.left-col-big ul {
-  list-style-type: none;
-}
-
-.left-col-big li {
-  margin: 20px 0;
-}
-/* ** /left col big ** */
+/* ** /left col  ** */
 
 /* ***** /main ****** */
 
 /* *** media *** */
 
 @media screen and (min-width: 576px) {
-  .left-col {
+  .sidebar {
     width: 230px;
-  }
-
-  .left-col-small {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .left-col-big {
-    display: none;
-  }
-
-  /* spaziatura e ridimensionamento delle immagine rispetto al contenitore */
-  .left-col img {
-    padding: 5px 12px;
-  }
-
-  .round-image img {
-    padding: 0 0;
-  }
-
-  .left-col-down {
-    padding-bottom: 10px;
   }
 }
 

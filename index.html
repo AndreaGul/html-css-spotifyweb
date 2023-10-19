@@ -29,54 +29,50 @@
     <!-- main -->
     <main>
       <!-- colonna di sinistra -->
-      <div class="left-col">
+      <div class="sidebar row color-white">
         <!-- elementi all'interno della colonna grandezza s -->
-        <div class="left-col-small">
-          <!-- icone in alto della colonna a sinistra -->
-          <img src="img/logo-small.svg" alt="logo Spotify" />
-          <img src="img/home.svg" alt="Home" />
-          <img src="img/search.svg" alt="Search" />
-          <img src="img/libreria.svg" alt="Library" />
-          <!-- /icone in alto della colonna a sinistra -->
 
-          <!-- download e profilo a fondo pagina -->
-          <div class="txt-center left-col-down">
-            <img class="left-download" src="img/download.svg" alt="Download" />
-            <div class="round-image">
-              <img src="img/profile.svg" alt="Profile" />
-            </div>
-          </div>
-          <!-- /download e profilo a fondo pagina -->
+        <!-- logo -->
+        <div>
+          <img src="img/logo-small.svg" alt="logo small Spotify" />
+          <img id="logo" src="img/logo.svg" alt="logo Spotify" />
         </div>
 
-        <div class="left-col-big color-white">
-          <!-- icone in alto della colonna a sinistra -->
-          <img id="logo" src="img/logo.svg" alt="logo Spotify" />
+        <!-- /logo -->
 
-          <div>
-            <div class="icon-text row align-center">
-              <img src="img/home.svg" alt="Home" />
-              <p>Home</p>
-            </div>
-
-            <div class="icon-text row align-center">
-              <img src="img/search.svg" alt="Search" />
-              <p>Cerca</p>
-            </div>
-            <div class="icon-text row align-center">
-              <img src="img/libreria.svg" alt="Library" />
-              <p>La tua libreria</p>
-            </div>
+        <!-- links -->
+        <div class="links">
+          <div class="icon-text row align-center">
+            <img src="img/home.svg" alt="Home" />
+            <p>Home</p>
           </div>
 
-          <h5>PLAYLIST</h5>
+          <div class="icon-text row align-center">
+            <img src="img/search.svg" alt="Search" />
+            <p>Cerca</p>
+          </div>
+          <div class="icon-text row align-center">
+            <img src="img/libreria.svg" alt="Library" />
+            <p>La tua libreria</p>
+          </div>
+        </div>
+        <!-- /links -->
 
+        <!-- playlist -->
+        <div class="playlist">
           <ul>
-            <li class="icon-text row align-center">
+            <li><h5>PLAYLIST</h5></li>
+            <li class="">
               <i class="fa-solid fa-square-plus"></i>
               <p>Crea Playlist</p>
             </li>
-            <li class="icon-text">Nome Playlist</li>
+          </ul>
+        </div>
+        <!-- /playlist -->
+
+        <div class="nome-playlist">
+          <ul class="el-nom-playlist">
+            <li class="">Nome Playlist</li>
             <li>Nome Playlist</li>
             <li>Nome Playlist</li>
             <li>Nome Playlist</li>
@@ -84,17 +80,18 @@
             <li>Nome Playlist</li>
             <li>Nome Playlist</li>
           </ul>
-          <!-- /icone in alto della colonna a sinistra -->
-
-          <!-- download e profilo a fondo pagina -->
-          <div class="txt-center left-col-down">
-            <img class="left-download" src="img/download.svg" alt="Download" />
-            <div class="round-image">
-              <img src="img/profile.svg" alt="Profile" />
-            </div>
-          </div>
-          <!-- /download e profilo a fondo pagina -->
         </div>
+
+        <!-- /icone in alto della colonna a sinistra -->
+
+        <!-- download e profilo a fondo pagina -->
+        <div class="profilo">
+          <img class="left-download" src="img/download.svg" alt="Download" />
+          <div class="">
+            <img src="img/profile.svg" alt="Profile" />
+          </div>
+        </div>
+        <!-- /download e profilo a fondo pagina -->
       </div>
       <!-- /colonna di sinistra -->
       <div class="right-col"></div>
