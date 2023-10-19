@@ -37,6 +37,10 @@ body {
   display: none;
 }
 
+.list-style-none {
+  list-style-type: none;
+}
+
 /* ** /common ** */
 
 /* ***** main ****** */
@@ -98,11 +102,22 @@ body {
   width: 28px;
 }
 
+.logo {
+  padding: 5px 0;
+}
+
 #logo {
+  width: 132px;
+  margin: 20px 20px;
   display: none;
 }
 
+.links li {
+  margin: 13px 0;
+}
+
 .links a {
+  padding: 0 20px;
   text-decoration: none;
   font-size: 14px;
   font-weight: 700;
@@ -110,6 +125,7 @@ body {
 }
 
 .links p {
+  margin-left: 4px;
   display: none;
 }
 
