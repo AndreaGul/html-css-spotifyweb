@@ -255,7 +255,12 @@ body {
 .corpo {
   flex-grow: 1;
   height: calc(100vh - 90px);
-  overflow: hidden;
+  overflow: auto;
+}
+
+/* calcolo delle larghezza che si prendono i box dedlle immagini */
+.calc-width {
+  width: calc(100% / 2);
 }
 
 /* * update* */
@@ -297,10 +302,6 @@ body {
 
 .recently ul {
   flex-wrap: wrap;
-}
-
-.recently li {
-  width: calc(100% / 2);
 }
 
 .recently li img {
@@ -379,6 +380,20 @@ footer {
   /* il paragrafo in download diventa dinuvo visibile */
   .profilo .download p {
     display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* ridiensionamento img */
+  .calc-width {
+    width: calc(100% / 4);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* ridiensionamento img */
+  .calc-width {
+    width: calc(100% / 6);
   }
 }
 
