@@ -25,6 +25,10 @@ body {
   display: flex;
 }
 
+.align-center {
+  align-items: center;
+}
+
 /* ** /common ** */
 
 /* ***** main ****** */
@@ -79,17 +83,35 @@ body {
 }
 
 .left-col-big .icon-text img {
-  width: 36px;
+  width: 30px;
   margin-right: 2px;
 }
 
 .left-col-big .icon-text {
-  align-items: center;
-  font-size: 18px;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
+.left-col-big h5 {
+  margin-top: 20px;
+}
+
+.left-col-big .icon-text i {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.left-col-big li:nth-child(1) {
+  margin-top: 10px;
+}
+
+.left-col-big ul {
+  list-style-type: none;
+}
+
+.left-col-big li {
+  margin: 20px 0;
+}
 /* ** /left col big ** */
 
 /* ***** /main ****** */
