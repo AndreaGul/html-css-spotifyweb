@@ -219,47 +219,75 @@ body {
 /* ** sidebar  ** */
 
 /* *** corpo *** */
-/* il conrpo della pagina si prende tutto lo spazio disponibile */
+
+/* *debug* */
+.debug .corpo {
+  background-color: blue;
+}
+
+.debug .update {
+  height: 90px;
+  background-color: red;
+}
+.debug .update button {
+  background-color: blue;
+}
+
+.debug .corpo .navbar {
+  background-color: yellow;
+}
+
+.debug .recently {
+  background-color: cyan;
+}
+
+.debug.dedicated {
+  background-color: brown;
+}
+
+.debug .popular {
+  background-color: purple;
+}
+/* * /debug* */
+
+/* il corpo della pagina si prende tutto lo spazio disponibile */
 .corpo {
   flex-grow: 1;
-  background-color: blue;
 }
 
 /* * update* */
 
+/*  altezza del contenitore */
 .update {
   height: 90px;
-  background-color: red;
 }
-.update .baloon {
-  background-color: blue;
+
+/* caratteristiche del button */
+.update button {
+  margin: auto 5px auto auto;
+  border: white solid 2px;
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 14px 40px;
+  font-weight: 700;
 }
+
 /* * /update* */
 
 /* *navbar* */
-.corpo .navbar {
-  background-color: yellow;
-}
+
 /* * /navbar* */
 
 /* * recently* */
 
-.recently {
-  background-color: cyan;
-}
-
 /* * /recently* */
 
 /* * dedicated* */
-.dedicated {
-  background-color: brown;
-}
+
 /* * /dedicated* */
 
 /* * popular* */
-.popular {
-  background-color: purple;
-}
+
 /* * /popular* */
 
 /* *** /corpo *** */
