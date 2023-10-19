@@ -22,22 +22,22 @@ body {
   text-align: center;
 }
 
+/* posizioni gli lementi un affianco all'altro */
 .row {
   display: flex;
 }
 
+/* posizioni gli elementi lungo sull'asse orizontale */
 .align-center {
   align-items: center;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
+/* rimuvo l'elemento dal flusso della pagina */
 .display-none-block {
   display: none;
 }
 
+/* rimuovo i pallini da affinaco la lista*/
 .list-style-none {
   list-style-type: none;
 }
@@ -52,23 +52,21 @@ body {
 .debug .links {
   background-color: red;
 }
-
 .debug .playlist {
   background-color: green;
 }
-
 .debug .nome-playlist {
   background-color: blue;
 }
-
 .debug .el-nom-playlist {
   background-color: pink;
 }
-
 .debug .profilo {
   background-color: lightblue;
 }
 /* *** /debug*** */
+
+/* la side bar ho definito all'interno la sua grandezza il colore e la disposizione dei sui lementi all'interno e l'impossibilità di schiiacciarsi più della sua grandezza */
 .sidebar {
   width: 50px;
   background-color: var(--bg-color-black);
@@ -77,14 +75,17 @@ body {
   flex-shrink: 0;
 }
 
+/* ho definito una grandezza standard che le immagini assumono */
 .sidebar img {
   width: 28px;
 }
 
+/* il container logo spazia i sui lementi dal container sopra e sotto */
 .logo {
   padding: 5px 0;
 }
 
+/* l'elemento logo ha queste caratteristiche */
 #logo {
   width: 132px;
   margin: 20px 20px;
@@ -93,10 +94,12 @@ body {
 
 /**** /links ****/
 
+/* oggni lemento il gli ha una spaziatura in alto e in basso */
 .links li {
   margin: 13px 0;
 }
 
+/* in links  hanno queste caratteristiche */
 .links a {
   padding: 0 20px;
   text-decoration: none;
@@ -105,6 +108,7 @@ body {
   justify-content: center;
 }
 
+/* i paragrafi in links hanno queste caratteristiche */
 .links p {
   margin-left: 4px;
   display: none;
@@ -112,6 +116,8 @@ body {
 /**** /links ****/
 
 /* *** playlist *** */
+
+/* il container playlist prende tutto lo spazio disponibile fa si che tutti gli elmenti che occupanno lo spazio a schermo superiore tale che altri eleenti della sidebar non vengano sovrascritto */
 .playlist {
   flex-grow: 1;
 
@@ -119,20 +125,24 @@ body {
 }
 
 /* ** header ** */
+/* gli lementi dentro all'header sono spaziati dal contenitore in questo modo */
 .header {
   padding-left: 20px;
   padding-bottom: 23px;
 }
 
+/* l'h5 ha un distanziamento sopra e sotto */
 .header h5 {
   margin: 12px 0;
 }
 
+/* l'icona ha queste caratteristiche */
 .header li i {
   font-size: 40px;
   margin-right: 12px;
 }
 
+/* il paragrafo a queste caratteristiche */
 .header li p {
   font-weight: 700;
 }
@@ -143,6 +153,7 @@ body {
   overflow-y: auto;
 } */
 
+/* la lista dei nomi paragrafo ha queste caratteristiche */
 .nome-playlist .el-nom-playlist li {
   padding-bottom: 20px;
   margin-left: 20px;
@@ -153,24 +164,28 @@ body {
 
 /* *profilo* */
 
+/* il container profilo si posiziona infondo al container sidebar perchè il margine auto si prende tutto il margine che ha a disposizioe */
 .profilo {
   margin-top: auto;
-  text-align: center;
 }
 
+/* il download ha queste caratteristiche e posiziona l'emento al centro */
 .profilo .download {
   justify-content: center;
   padding-bottom: 12px;
 }
 
+/* l'immagine in download ha queste caratteristiche */
 .profilo .download img {
   width: 12px;
 }
 
+/* il paragrafo prima della dimensione xs no si vede */
 .profilo .download p {
   display: none;
 }
 
+/* il container dell'immagine di profilo si distanzia superioremente  */
 .profilo .img-profilo {
   margin-top: 14px;
 }
@@ -197,7 +212,8 @@ body {
 
 /* ** sidebar  ** */
 
-.menu {
+/* il conrpo della pagina si prende tutto lo spazio disponibile */
+.Corpo {
   flex-grow: 1;
 }
 
@@ -205,6 +221,7 @@ body {
 
 /* ***** footer ****** */
 
+/* definiamom la grandezza del footer */
 footer {
   height: 90px;
   background-color: bisque;
@@ -215,37 +232,48 @@ footer {
 /* *** media *** */
 
 @media screen and (min-width: 576px) {
+  /* ridefiniamo la grandezza della side bar */
   .sidebar {
     width: 230px;
   }
+
+  /* il logo diventa visibile */
   #logo {
     display: block;
   }
+
+  /* il logo piccola diventa invisibile */
   #logo-small {
     display: none;
   }
 
+  /* questa classe permette agli lementi di tornare visibili */
   .display-none-block {
     display: block;
   }
 
+  /* il paragrafo in link diventa visibile */
   .links p {
     display: block;
   }
 
+  /* i link si allineano a sinistra */
   .links a {
     justify-content: left;
   }
 
+  /* gli lementi del profilo si allineano a sinistra e hanno una spaziiatura a sinistra e a destra */
   .profilo {
     text-align: left;
     padding: 0 20px;
   }
 
+  /* il downaload presenta un bordo inferiore e si allinea a sinistra */
   .profilo .download {
     border-bottom: var(--colore-grey) solid 2px;
     justify-content: left;
   }
+  /* il paragrafo in download diventa dinuvo visibile */
   .profilo .download p {
     display: block;
   }
