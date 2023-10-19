@@ -10,6 +10,7 @@ body {
   --bg-color-black: #000000;
   --txt-color-white: #fff;
   --colore-grey: #717171;
+  --colore-darkblu: #080b12;
 }
 
 .color-white {
@@ -30,6 +31,11 @@ body {
 /* posizioni gli elementi lungo sull'asse orizontale */
 .align-center {
   align-items: center;
+}
+
+/* posizioni gli elementi centralmente del contenitore */
+.justify-center {
+  justify-content: center;
 }
 
 /* rimuvo l'elemento dal flusso della pagina */
@@ -212,10 +218,51 @@ body {
 
 /* ** sidebar  ** */
 
+/* *** corpo *** */
 /* il conrpo della pagina si prende tutto lo spazio disponibile */
-.Corpo {
+.corpo {
   flex-grow: 1;
+  background-color: blue;
 }
+
+/* * update* */
+
+.update {
+  height: 90px;
+  background-color: red;
+}
+.update .baloon {
+  background-color: blue;
+}
+/* * /update* */
+
+/* *navbar* */
+.corpo .navbar {
+  background-color: yellow;
+}
+/* * /navbar* */
+
+/* * recently* */
+
+.recently {
+  background-color: cyan;
+}
+
+/* * /recently* */
+
+/* * dedicated* */
+.dedicated {
+  background-color: brown;
+}
+/* * /dedicated* */
+
+/* * popular* */
+.popular {
+  background-color: purple;
+}
+/* * /popular* */
+
+/* *** /corpo *** */
 
 /* ***** /main ****** */
 
