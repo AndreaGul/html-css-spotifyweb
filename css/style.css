@@ -254,6 +254,8 @@ body {
 /* il corpo della pagina si prende tutto lo spazio disponibile */
 .corpo {
   flex-grow: 1;
+  height: calc(100vh - 90px);
+  overflow: hidden;
 }
 
 /* * update* */
