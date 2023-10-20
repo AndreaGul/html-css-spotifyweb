@@ -15,6 +15,7 @@ main {
   --bg-color-black: #000000;
   --txt-color-white: #fff;
   --colore-grey: #717171;
+  --bg-slider: #5a5a5a;
 
   --bg-darkblu: #141922;
 }
@@ -383,6 +384,32 @@ footer .footer-left,
 .footer-left-icon {
   flex-direction: column;
 }
+
+.footer-right {
+  padding-right: 20px;
+}
+.footer-right .slider {
+  width: 85px;
+}
+
+.slider {
+  vertical-align: middle;
+}
+
+.slider input[type='range'] {
+  width: 100%;
+  appearance: none;
+  height: 8px;
+  vertical-align: ;
+  border-radius: 5px;
+  background: var(--bg-slider);
+  outline: none;
+}
+
+.slider input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
 /* ***** /footer ****** */
 
 /* *** media *** */
