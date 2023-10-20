@@ -11,7 +11,8 @@ body {
   --bg-color-black: #000000;
   --txt-color-white: #fff;
   --colore-grey: #717171;
-  --colore-darkblu: #080b12;
+
+  --bg-darkblu: #141922;
 }
 
 .color-white {
@@ -166,10 +167,12 @@ body {
 }
 
 /* ** header ** */
+
+/* * nome playlist* */
 /* todo da rivedere scroll bar */
-/* .playlist .nome-playlist {
+.playlist .nome-playlist {
   overflow-y: auto;
-} */
+}
 
 /* la lista dei nomi paragrafo ha queste caratteristiche */
 .nome-playlist .el-nom-playlist li {
@@ -257,6 +260,7 @@ body {
   flex-grow: 1;
   height: calc(100vh - 90px);
   overflow: auto;
+  background-color: var(--bg-darkblu);
 }
 
 /* calcolo delle larghezza che si prendono i box dedlle immagini */
