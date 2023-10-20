@@ -139,8 +139,9 @@ body {
 /* il container playlist prende tutto lo spazio disponibile fa si che tutti gli elmenti che occupanno lo spazio a schermo superiore tale che altri eleenti della sidebar non vengano sovrascritto */
 .playlist {
   flex-grow: 1;
-
+  flex-direction: column;
   overflow-y: hidden;
+  display: none;
 }
 
 /* ** header ** */
@@ -383,6 +384,11 @@ footer {
   /* questa classe permette agli lementi di tornare visibili */
   .display-none-block {
     display: block;
+  }
+
+  /* faccio diventare playlist flex */
+  .playlist {
+    display: flex;
   }
 
   /* il paragrafo in link diventa visibile */
