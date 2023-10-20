@@ -4,6 +4,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+main {
+  height: calc(100vh - 90px);
+}
+
 /* ** common ** */
 
 /* colori */
@@ -89,7 +93,7 @@ body {
 .sidebar {
   width: 50px;
   background-color: var(--bg-color-black);
-  height: calc(100vh - 90px);
+  height: 100%;
   flex-direction: column;
   flex-shrink: 0;
 }
@@ -259,7 +263,7 @@ body {
 /* il corpo della pagina si prende tutto lo spazio disponibile */
 .corpo {
   flex-grow: 1;
-  height: calc(100vh - 90px);
+  height: 100%;
   overflow: auto;
   background-color: var(--bg-darkblu);
 }
@@ -359,6 +363,11 @@ body {
 footer {
   height: 90px;
   background-color: bisque;
+  justify-content: space-between;
+}
+
+footer div {
+  background-color: red;
 }
 
 /* ***** /footer ****** */
