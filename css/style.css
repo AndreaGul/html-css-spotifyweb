@@ -366,10 +366,23 @@ footer {
   justify-content: space-between;
 }
 
-footer div {
+footer .footer-left,
+.footer-middle,
+.footer-right {
   background-color: red;
 }
 
+.footer-left .footer-img {
+  width: 38px;
+}
+
+.footer-left .footer-img img {
+  width: 100%;
+}
+
+.footer-left-icon {
+  flex-direction: column;
+}
 /* ***** /footer ****** */
 
 /* *** media *** */
@@ -431,6 +444,10 @@ footer div {
   /* ridiensionamento img */
   .calc-width {
     width: calc((100% - 30px) / 4);
+  }
+
+  .footer-left-icon {
+    flex-direction: row;
   }
 }
 
