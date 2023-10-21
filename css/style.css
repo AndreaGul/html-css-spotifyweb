@@ -159,6 +159,7 @@ main {
 /* l'h5 ha un distanziamento sopra e sotto */
 .header h5 {
   margin: 12px 0;
+  text-transform: uppercase;
 }
 
 /* l'icona ha queste caratteristiche */
@@ -286,6 +287,7 @@ main {
 
 /* caratteristiche del button */
 .update button {
+  text-transform: uppercase;
   margin: auto 20px auto auto;
   border: white solid 2px;
   background-color: transparent;
@@ -310,6 +312,7 @@ main {
 /* caratteristiche della lista */
 .navbar li {
   margin: 22px 10px;
+  text-transform: uppercase;
   font-weight: 700;
   color: var(--colore-grey);
 }
@@ -323,7 +326,6 @@ main {
 }
 
 .box-song p {
-  margin-top: 15px;
   font-size: 14px;
   font-weight: 700;
 }
@@ -340,13 +342,14 @@ main {
 }
 
 .box-song li h5 {
-  margin: 20px 0 8px 0;
+  margin-top: 20px;
   color: var(--txt-color-white);
   font-weight: 700;
   font-size: 18px;
 }
 
 .box-song li p {
+  line-height: 34px;
   font-size: 14px;
   font-weight: 700;
 }
