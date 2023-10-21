@@ -233,11 +233,10 @@ main {
 
 /* *debug* */
 .debug .corpo {
-  background-color: blue;
+  background-color: magenta;
 }
 
 .debug .update {
-  height: 90px;
   background-color: red;
 }
 .debug .update button {
@@ -279,11 +278,15 @@ main {
 /*  altezza del contenitore */
 .update {
   height: 90px;
+  position: fixed;
+  width: calc(100% - 50px);
+
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* caratteristiche del button */
 .update button {
-  margin: auto 5px auto auto;
+  margin: auto 20px auto auto;
   border: white solid 2px;
   background-color: transparent;
   border-radius: 30px;
@@ -294,6 +297,10 @@ main {
 /* * /update* */
 
 /* *navbar* */
+
+.navbar {
+  margin-top: 90px;
+}
 
 /* gli elementi che non riescono ad entrare nel vieport vanno a capo*/
 .navbar ul {
@@ -493,6 +500,11 @@ footer {
   /* il paragrafo in download diventa dinuvo visibile */
   .profilo .download p {
     display: block;
+  }
+
+  /* lo spazio occupato dal container update in alto */
+  .update {
+    width: calc(100% - 230px);
   }
 }
 
