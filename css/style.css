@@ -17,11 +17,15 @@ main {
   --colore-grey: #717171;
   --bg-slider: #5a5a5a;
   --bg-darkgrey: #282828;
-
+  --txt-lightgrey: #a3a3a3;
   --bg-darkblu: #141922;
 }
 
-.color-white {
+.txt-color-grey {
+  color: var(--colore-grey);
+}
+
+.txt.color-white {
   color: var(--txt-color-white);
 }
 /* /colori */
@@ -188,7 +192,7 @@ main {
 /* l'h5 ha un distanziamento sopra e sotto */
 .header h4 {
   margin: 12px 0;
-
+  color: var(--txt-color-white);
   text-transform: uppercase;
 }
 
@@ -196,6 +200,23 @@ main {
 .header li i {
   font-size: 40px;
   margin-right: 12px;
+  color: var(--txt-lightgrey);
+}
+
+/* quando passo sopra appare come un testo */
+.playlist .header li:first-of-type h4 {
+  cursor: text;
+}
+
+/* passandoci sopra appare bianco */
+.header li:hover i {
+  color: var(--txt-color-white);
+}
+
+/* passandoci sopra appare bianco */
+.playlist li:hover {
+  color: var(--txt-color-white);
+  cursor: pointer;
 }
 
 /* ** header ** */
