@@ -25,7 +25,7 @@ main {
   color: var(--colore-grey);
 }
 
-.txt.color-white {
+.txt-color-white {
   color: var(--txt-color-white);
 }
 /* /colori */
@@ -374,6 +374,10 @@ main {
   border-radius: 30px;
   padding: 14px 40px;
   font-size: 16px;
+}
+
+.update button:hover {
+  transform: scale(110%);
 }
 
 /* * /update* */
