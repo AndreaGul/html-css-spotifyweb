@@ -68,7 +68,7 @@ main {
 /* dimensioni immagine rispetto al suo contenitore per farla diventare rotonda */
 .round-image img {
   width: 100%;
-  height: 100%;
+
   display: block;
 }
 
@@ -203,6 +203,23 @@ main {
   color: var(--txt-lightgrey);
 }
 
+/* ** header ** */
+
+/* * nome playlist* */
+
+.playlist .nome-playlist {
+  overflow-y: auto;
+}
+
+/* la lista dei nomi paragrafo ha queste caratteristiche */
+.nome-playlist .el-nom-playlist li {
+  padding-bottom: 20px;
+  margin-left: 20px;
+}
+/* * /nome playlist* */
+
+/* *sezione hover* */
+
 /* quando passo sopra appare come un testo */
 .playlist .header li:first-of-type h4 {
   cursor: text;
@@ -218,20 +235,7 @@ main {
   color: var(--txt-color-white);
   cursor: pointer;
 }
-
-/* ** header ** */
-
-/* * nome playlist* */
-/* todo da rivedere scroll bar */
-.playlist .nome-playlist {
-  overflow-y: auto;
-}
-
-/* la lista dei nomi paragrafo ha queste caratteristiche */
-.nome-playlist .el-nom-playlist li {
-  padding-bottom: 20px;
-  margin-left: 20px;
-}
+/* * /sezione hover* */
 
 /* *** /playlist *** */
 
@@ -251,16 +255,21 @@ main {
 /* l'immagine in download ha queste caratteristiche */
 .profilo .download img {
   width: 12px;
+  filter: invert(46%);
 }
 
 /* il paragrafo prima della dimensione xs no si vede */
 .profilo .download p {
   display: none;
+  margin-left: 12px;
+  color: var(--colore-grey);
 }
 
 /* il container dell'immagine di profilo si distanzia superioremente  */
-.profilo .img-profilo {
+
+.icon-name-profilo {
   margin-top: 14px;
+  margin-bottom: 7px;
 }
 
 /* caratteriistiche icona profilo */
@@ -269,7 +278,33 @@ main {
   width: 25px;
   overflow: hidden;
   background-color: gray;
+  object-fit: cover;
 }
+
+/* dimensioni immaggine */
+.profilo .round-image img {
+  width: 100%;
+  display: block;
+}
+
+/* colore paragrafo e pargine sinistro */
+.icon-name-profilo p {
+  margin-left: 10px;
+  color: var(--txt-color-white);
+}
+
+/* *sezione hover* */
+/* icona dell'download diventa bianca */
+.profilo .download:hover img {
+  filter: invert(0%);
+}
+
+/* il paragafo diventa bianca ed esce la manina quan ci si passa sopra */
+.profilo .download:hover p {
+  color: var(--txt-color-white);
+  cursor: pointer;
+}
+/* * /sezione hover* */
 
 /* * /profilo* */
 
