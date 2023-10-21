@@ -137,6 +137,28 @@ main {
   font-size: 14px;
 
   justify-content: center;
+  color: var(--colore-grey);
+}
+
+/* colore del primo paragrafo nell'ul*/
+.links ul li:first-of-type p {
+  color: var(--txt-color-white);
+}
+
+/* l'immagine diventa scende di gradazione del 18% */
+.links ul li img {
+  filter: invert(18%);
+}
+
+/* quando passo il mouse sopra al link l'immagine diventa bianca */
+.links ul a:hover img {
+  filter: invert(0%);
+}
+
+/* quando passo sopra con il mouse il testo diiventa bianca */
+.links ul a:hover {
+  color: var(--txt-color-white);
+  cursor: pointer;
 }
 
 /* i paragrafi in links hanno queste caratteristiche */
