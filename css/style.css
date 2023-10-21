@@ -66,6 +66,12 @@ main {
   height: 100%;
   display: block;
 }
+
+/* font weight bold */
+
+.font-weight-700 {
+  font-weight: 700;
+}
 /* ** /common ** */
 
 /* ***** main ****** */
@@ -128,7 +134,7 @@ main {
   padding: 0 20px;
   text-decoration: none;
   font-size: 14px;
-  font-weight: 700;
+
   justify-content: center;
 }
 
@@ -157,8 +163,9 @@ main {
 }
 
 /* l'h5 ha un distanziamento sopra e sotto */
-.header h5 {
+.header h4 {
   margin: 12px 0;
+
   text-transform: uppercase;
 }
 
@@ -166,11 +173,6 @@ main {
 .header li i {
   font-size: 40px;
   margin-right: 12px;
-}
-
-/* il paragrafo a queste caratteristiche */
-.header li p {
-  font-weight: 700;
 }
 
 /* ** header ** */
@@ -185,7 +187,6 @@ main {
 .nome-playlist .el-nom-playlist li {
   padding-bottom: 20px;
   margin-left: 20px;
-  font-weight: 700;
 }
 
 /* *** /playlist *** */
@@ -293,7 +294,7 @@ main {
   background-color: transparent;
   border-radius: 30px;
   padding: 14px 40px;
-  font-weight: 700;
+  font-size: 16px;
 }
 
 /* * /update* */
@@ -313,7 +314,7 @@ main {
 .navbar li {
   margin: 22px 10px;
   text-transform: uppercase;
-  font-weight: 700;
+
   color: var(--colore-grey);
 }
 
@@ -323,11 +324,6 @@ main {
 
 .box-song {
   padding: 22px 22px;
-}
-
-.box-song p {
-  font-size: 14px;
-  font-weight: 700;
 }
 
 .box-song ul {
@@ -344,14 +340,13 @@ main {
 .box-song li h5 {
   margin-top: 20px;
   color: var(--txt-color-white);
-  font-weight: 700;
+
   font-size: 18px;
 }
 
 .box-song li p {
   line-height: 34px;
   font-size: 14px;
-  font-weight: 700;
 }
 
 /* * /recently* */
