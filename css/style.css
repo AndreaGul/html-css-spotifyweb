@@ -244,12 +244,12 @@ main {
 /* il container profilo si posiziona infondo al container sidebar perchè il margine auto si prende tutto il margine che ha a disposizioe */
 .profilo {
   margin-top: auto;
+  padding: 7px 0;
 }
 
 /* il download ha queste caratteristiche e posiziona l'emento al centro */
 .profilo .download {
   justify-content: center;
-  padding-bottom: 12px;
 }
 
 /* l'immagine in download ha queste caratteristiche */
@@ -269,7 +269,7 @@ main {
 
 .icon-name-profilo {
   margin-top: 14px;
-  margin-bottom: 7px;
+  justify-content: center;
 }
 
 /* caratteriistiche icona profilo */
@@ -291,6 +291,7 @@ main {
 .icon-name-profilo p {
   margin-left: 10px;
   color: var(--txt-color-white);
+  display: none;
 }
 
 /* *sezione hover* */
@@ -582,17 +583,26 @@ footer {
   /* gli lementi del profilo si allineano a sinistra e hanno una spaziiatura a sinistra e a destra */
   .profilo {
     text-align: left;
-    padding: 0 20px;
+    padding: 7px 20px;
   }
 
   /* il downaload presenta un bordo inferiore e si allinea a sinistra */
   .profilo .download {
+    padding-bottom: 12px;
     border-bottom: var(--colore-grey) solid 2px;
     justify-content: left;
   }
   /* il paragrafo in download diventa dinuvo visibile */
   .profilo .download p {
     display: block;
+  }
+
+  .profilo .icon-name-profilo p {
+    display: block;
+  }
+
+  .profilo .icon-name-profilo {
+    justify-content: left;
   }
 
   /* lo spazio occupato dal container update in alto */
