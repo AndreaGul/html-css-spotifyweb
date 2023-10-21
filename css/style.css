@@ -596,6 +596,30 @@ footer {
 /* gli span sono allineati verticalmente lungo l'asse orizontale tra di loro */
 .footer-middle span {
   vertical-align: middle;
+  font-size: 10px;
+}
+
+/* caratteristiche delle icone */
+.footer-middle span i {
+  color: var(--txt-color-white);
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+/* grandezza del play button centrale */
+.footer-middle .certral-play-button {
+  font-size: 24px;
+  margin: 0 20px;
+}
+
+/* al passare con mouse appare il cursore dela manina */
+.footer-middle span i:hover {
+  cursor: pointer;
+}
+
+/*  al passare del mouse il play button diventa più grande */
+.footer-middle .certral-play-button:hover {
+  transform: scale(130%);
 }
 
 /* il container non puo diminuire la sua grandezza più diquanto la grandezza degli altri container fratelli */
