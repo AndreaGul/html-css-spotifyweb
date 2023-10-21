@@ -450,6 +450,7 @@ main {
   position: relative;
 }
 
+/* caratteristiche background play button */
 .box-img .hover-grey {
   width: 100%;
   height: 100%;
@@ -460,6 +461,8 @@ main {
   transform: translate(-50%, -50%);
   z-index: -1;
 }
+
+/* caratteristiche play button */
 .box-img .hover-grey i {
   position: absolute;
   display: block;
@@ -470,10 +473,13 @@ main {
   font-size: 50px;
   z-index: -1;
 }
+
+/* ad hover gli lementi vanno sopra l'immagine fissa */
 .box-img:hover .hover-grey {
   z-index: 1;
 }
 
+/* ad hover gli lementi vanno sopra l'immagine fissa */
 .box-img:hover .hover-grey i {
   z-index: 1;
 }
@@ -516,6 +522,12 @@ footer {
   background-color: var(--bg-darkgrey);
 
   justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* il container non puo diminuire la sua grandezza più diquanto la grandezza degli altri container fratelli */
+.footer-left {
+  flex-shrink: 1;
 }
 
 /* grandezza del contenitore dell'immagine */
@@ -526,6 +538,34 @@ footer {
 /* grandezza dell'immagine */
 .footer-left .footer-img img {
   width: 100%;
+  display: block;
+}
+
+/* spaziamento del testo a destra e sinistra */
+.footer-left-text {
+  margin: 0 12px;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+/* colore del testo */
+.footer-left-text h5 {
+  color: var(--txt-color-white);
+}
+
+/* colore e grandezza testp */
+.footer-left-text p {
+  color: var(--colore-grey);
+  font-size: 10px;
+}
+
+/*  passando con il cursore sopra diventa bianco */
+.footer-left-text p:hover {
+  color: var(--txt-color-white);
+
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* direzione delle icone nella parte sinistra del footer */
@@ -533,10 +573,24 @@ footer {
   flex-direction: column;
 }
 
+/* spaziamento delle icone l'una dall'altra */
+.footer-left-icon i {
+  margin: 3px 6px;
+  color: var(--colore-grey);
+}
+
+/*  passando con il cursore sopra diventa bianco */
+.footer-left-icon i:hover {
+  color: var(--txt-color-white);
+  cursor: pointer;
+}
+
 /* facciamom prendere alla parte centrale tutto lo spazio disponibile allineammo i suoi  alemente centralmente */
+/* il container non puo diminuire la sua grandezza più diquanto la grandezza degli altri container fratelli */
 .footer-middle {
   flex-grow: 1;
   text-align: center;
+  flex-shrink: 1;
 }
 
 /* gli span sono allineati verticalmente lungo l'asse orizontale tra di loro */
@@ -544,11 +598,9 @@ footer {
   vertical-align: middle;
 }
 
-/* todo nella sezione xs gli lementti dle footer occupano tutti e 3 1/3 del footer */
-
-/* spaziemmnto del contenuto a destra del footer */
+/* il container non puo diminuire la sua grandezza più diquanto la grandezza degli altri container fratelli */
 .footer-right {
-  padding-right: 20px;
+  flex-shrink: 1;
 }
 
 /* grandezza dello slider  centrale */
