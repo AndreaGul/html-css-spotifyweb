@@ -627,14 +627,22 @@ footer {
   flex-shrink: 1;
 }
 
-/* grandezza dello slider  centrale */
-.footer-middle .slider input[type='range'] {
-  width: 60%;
+.footer-right i {
+  margin: 0 4px;
+  color: var(--txt-color-white);
+}
+
+.container-slider {
+  margin-left: 2px;
 }
 
 /* grandezza del contenitore dello slider */
 .footer-right .slider {
   width: 85px;
+}
+/* grandezza dello slider  centrale */
+.footer-middle .slider input[type='range'] {
+  width: 60%;
 }
 
 /* caratteristiche  dello slider*/
