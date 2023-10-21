@@ -16,6 +16,7 @@ main {
   --txt-color-white: #fff;
   --colore-grey: #717171;
   --bg-slider: #5a5a5a;
+  --bg-darkgrey: #282828;
 
   --bg-darkblu: #141922;
 }
@@ -366,13 +367,17 @@ main {
 /* ***** footer ****** */
 
 /* *debug* */
-footer {
+.debug footer {
   background-color: bisque;
 }
 
-.debug footer .footer-left,
-.footer-middle,
-.footer-right {
+.debug .footer-left {
+  background-color: red;
+}
+.debug .footer-middle {
+  background-color: red;
+}
+.debug .footer-right {
   background-color: red;
 }
 /* * /debug* */
@@ -380,6 +385,7 @@ footer {
 /* definiamo la grandezza del footer e lo spaziamento dei suoi lementi all'interno*/
 footer {
   height: 90px;
+  background-color: var(--bg-darkgrey);
 
   justify-content: space-between;
 }
