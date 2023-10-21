@@ -360,55 +360,69 @@ main {
 
 /* ***** footer ****** */
 
-/* definiamom la grandezza del footer */
+/* *debug* */
 footer {
-  height: 90px;
   background-color: bisque;
-  justify-content: space-between;
 }
 
-footer .footer-left,
+.debug footer .footer-left,
 .footer-middle,
 .footer-right {
   background-color: red;
 }
+/* * /debug* */
 
+/* definiamo la grandezza del footer e lo spaziamento dei suoi lementi all'interno*/
+footer {
+  height: 90px;
+
+  justify-content: space-between;
+}
+
+/* grandezza del contenitore dell'immagine */
 .footer-left .footer-img {
   width: 38px;
 }
 
+/* grandezza dell'immagine */
 .footer-left .footer-img img {
   width: 100%;
 }
 
+/* direzione delle icone nella parte sinistra del footer */
 .footer-left-icon {
   flex-direction: column;
 }
 
+/* facciamom prendere alla parte centrale tutto lo spazio disponibile allineammo i suoi  alemente centralmente */
 .footer-middle {
   flex-grow: 1;
   text-align: center;
-  vertical-align: middle;
 }
+
+/* gli span sono allineati verticalmente lungo l'asse orizontale tra di loro */
 .footer-middle span {
   vertical-align: middle;
 }
 
-.middle-slider {
-  vertical-align: middle;
+/* todo nella sezione xs gli lementti dle footer occupano tutti e 3 1/3 del footer */
+
+/* spaziemmnto del contenuto a destra del footer */
+.footer-right {
+  padding-right: 20px;
 }
 
+/* grandezza dello slider  centrale */
 .footer-middle .slider input[type='range'] {
   width: 60%;
 }
 
-.footer-right {
-  padding-right: 20px;
-}
+/* grandezza del contenitore dello slider */
 .footer-right .slider {
   width: 85px;
 }
 
+/* caratteristiche  dello slider*/
 .slider input[type='range'] {
   width: 100%;
   appearance: none;
@@ -420,6 +434,7 @@ footer .footer-left,
   outline: none;
 }
 
+/* caratteristiche  della barra dello slider*/
 .slider input::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
@@ -487,6 +502,7 @@ footer .footer-left,
     width: calc((100% - 30px) / 4);
   }
 
+  /* le icone nella  parte sinistra  del footer di posizionanon una affianco all'altra */
   .footer-left-icon {
     flex-direction: row;
   }
