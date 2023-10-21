@@ -376,6 +376,7 @@ main {
   font-size: 16px;
 }
 
+/* passandoci sopra il bottone si ingrandisce */
 .update button:hover {
   transform: scale(110%);
 }
@@ -399,6 +400,12 @@ main {
   text-transform: uppercase;
 
   color: var(--colore-grey);
+}
+
+/* passando sulla lista il testo diventa bianco */
+.navbar li:hover {
+  color: var(--txt-color-white);
+  cursor: pointer;
 }
 
 /* * /navbar* */
