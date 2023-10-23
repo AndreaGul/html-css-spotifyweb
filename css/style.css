@@ -179,6 +179,7 @@ main {
   flex-direction: column;
   overflow-y: hidden;
   display: none;
+  min-height: 100px;
 }
 
 /* ** header ** */
@@ -208,6 +209,7 @@ main {
 
 .playlist .nome-playlist {
   overflow-y: auto;
+  min-height: 100px;
 }
 
 /* la lista dei nomi paragrafo ha queste caratteristiche */
