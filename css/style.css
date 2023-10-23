@@ -402,6 +402,22 @@ main {
 
   color: var(--colore-grey);
 }
+/* caratteristiiche del trattino */
+.navbar .active {
+  position: relative;
+}
+.navbar .active::after {
+  position: absolute;
+  bottom: -25%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  height: 2px;
+  content: '';
+  width: 30px;
+  background-color: #adff2f;
+}
+/* caratteristiiche del trattino */
 
 /* passando sulla lista il testo diventa bianco */
 .navbar li:hover {
