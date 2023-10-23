@@ -522,11 +522,14 @@ footer {
 
   justify-content: space-between;
   padding: 0 10px;
+  position: fixed;
+  width: 100vw;
 }
 
 /* il container non puo diminuire la sua grandezza più diquanto la grandezza degli altri container fratelli */
 .footer-left {
-  flex-shrink: 1;
+  max-width: 230px;
+  height: 100%;
 }
 
 /* grandezza del contenitore dell'immagine */
@@ -587,32 +590,30 @@ footer {
 /* facciamom prendere alla parte centrale tutto lo spazio disponibile allineammo i suoi  alemente centralmente */
 /* il container non puo diminuire la sua grandezza più diquanto la grandezza degli altri container fratelli */
 .footer-middle {
-  flex-grow: 1;
+  width: 40%;
   text-align: center;
-  flex-shrink: 1;
+  height: 100%;
 }
 
-/* gli span sono allineati verticalmente lungo l'asse orizontale tra di loro */
-.footer-middle span {
-  vertical-align: middle;
-  font-size: 10px;
+.footer-middle-icon {
+  height: 60%;
 }
 
 /* caratteristiche delle icone */
-.footer-middle span i {
+.footer-middle .footer-middle-icon p i {
   color: var(--txt-color-white);
-  font-size: 18px;
+
   margin: 0 10px;
 }
 
 /* grandezza del play button centrale */
-.footer-middle .certral-play-button {
-  font-size: 24px;
+.footer-middle p .certral-play-button {
+  font-size: 26px;
   margin: 0 20px;
 }
 
 /* al passare con mouse appare il cursore dela manina */
-.footer-middle span i:hover {
+.footer-middle .footer-middle-icon p i:hover {
   cursor: pointer;
 }
 
@@ -623,7 +624,9 @@ footer {
 
 /* il container non puo diminuire la sua grandezza più diquanto la grandezza degli altri container fratelli */
 .footer-right {
-  flex-shrink: 1;
+  justify-content: right;
+  max-width: 230px;
+  height: 100%;
 }
 
 .footer-right i {
